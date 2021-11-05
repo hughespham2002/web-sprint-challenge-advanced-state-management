@@ -29,6 +29,12 @@ export const fetchError = (errorMessage) => {
 
 export const FETCH_ERROR = "FETCH_ERROR";
 
+export const changeError = (errorString) => {
+    return({type: CHANGE_ERROR, payload: errorString});
+}
+
+export const CHANGE_ERROR = "CHANGE_ERROR";
+
 export const addSmurf = (smurfs) => {
     return({type: ADD_SMURF, payload: smurfs});
 };
